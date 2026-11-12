@@ -1,0 +1,28 @@
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Generated simulation outputs (keep directory tracked via outputs/.gitkeep)
+outputs/*.csv
+outputs/*.json
+outputs/*.md
+outputs/*.log
+!outputs/.gitkeep
+
+# Restricted hospital data (NEVER commit real extracts or send-out catalogues)
+data/raw_10months_orders.csv.gz
+data/danhmucguimau.xlsx
+data/empirical_10months_audit.json
+*.xlsx
+*.db
+*.sqlite
+
+# OS / IDE artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
