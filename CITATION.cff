@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software or synthetic benchmark dataset, please cite it using the metadata below."
 type: software
-title: "Can Specimen Dispatch Optimization Shorten Outpatient Laboratory Turnaround Time? Retrospective Simulation Study Toward a Laboratory Digital Twin"
+title: "Why Specimen Dispatch Optimization Alone Does Not Shorten Outpatient Laboratory Turnaround Time: A 10-Month Two-Wave Fork–Join Simulation Study"
 authors:
   - family-names: Pham
     given-names: Van Hanh

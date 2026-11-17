@@ -1,4 +1,4 @@
-# Can Specimen Dispatch Optimization Shorten Outpatient Laboratory Turnaround Time? Retrospective Simulation Study Toward a Laboratory Digital Twin
+# Why Specimen Dispatch Optimization Alone Does Not Shorten Outpatient Laboratory Turnaround Time: A 10-Month Two-Wave Fork–Join Simulation Study
 
 Public reproducibility repository accompanying the JMIR manuscript evaluating a **two-wave Fork–Join discrete-event simulation (DES) and Memetic Digital Twin–Genetic Algorithm (Memetic DT-GA)** dispatch framework for outpatient clinical laboratory turnaround time (TAT) and >120-minute service-level agreement (SLA) compliance.
 
