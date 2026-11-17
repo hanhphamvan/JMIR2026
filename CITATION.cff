@@ -1,25 +1,25 @@
 cff-version: 1.2.0
 message: "If you use this software or synthetic benchmark dataset, please cite it using the metadata below."
 type: software
-title: "Memetic Digital Twin–Genetic Algorithm (DT-GA) for Fork–Join Outpatient Clinical Laboratory Turnaround Time Simulation and Dispatch Optimization"
+title: "Can Specimen Dispatch Optimization Shorten Outpatient Laboratory Turnaround Time? Retrospective Simulation Study Toward a Laboratory Digital Twin"
 authors:
   - family-names: Pham
     given-names: Van Hanh
     email: hanhpv109@hlu.edu.vn
-  - family-names: Le
-    given-names: Hoang Son
   - family-names: Nguyen
     given-names: Tien Nhat Quang
   - family-names: Nguyen
     given-names: Thi Thu Nga
+  - family-names: Le
+    given-names: Hoang Son
 license: MIT
 repository-code: "https://github.com/hanhphamvan/JMIR2026"
 date-released: 2026-11-12
 keywords:
   - digital twin
   - genetic algorithm
-  - memetic algorithm
+  - laboratory scheduling
+  - turnaround time
   - discrete-event simulation
-  - fork-join queueing
-  - laboratory turnaround time
-  - Kleinrock conservation law
+  - Fork-Join queue
+  - queueing
