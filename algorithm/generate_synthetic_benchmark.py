@@ -60,6 +60,17 @@ def generate_synthetic_benchmark(seed: int = 202611):
                     "ResourceGroup": gname,
                 })
     df = pd.DataFrame(rows)
+    # Add tracking offset columns using a separate PRNG stream so core 15,349 rows stay identical
+    rng_rec = np.random.default_rng(seed + 1)
+    df["Test_minus_Require_Min"] = 0.0
+    df["Test_minus_Collected_Min"] = 0.0
+    df["Device_minus_Test_Min"] = np.round(df["T3_Min"] - df["T2_Min"], 3)
+    rec_raw = rng_rec.gamma(3.0, 6.5, size=len(df))
+    has_scan = df["OrderDate"] >= "2026-07-21"
+    rec_diff = np.where(has_scan, np.round(np.clip(rec_raw, 2.0, np.maximum(3.0, df["T4_Min"] - df["T2_Min"] - 1.0)), 3), np.nan)
+    df["Received_minus_Test_Min"] = rec_diff
+    df["Received_Min_Of_Day"] = np.round(df["T2_Min"] + rec_diff, 3)
+
     os.makedirs(os.path.dirname(OUT_SYNTH), exist_ok=True)
     df.to_csv(OUT_SYNTH, index=False, compression="gzip", encoding="utf-8")
     print(f"[DONE] Generated purely synthetic 304-day de novo benchmark: {len(df):,} rows -> {OUT_SYNTH} ({os.path.getsize(OUT_SYNTH):,} bytes)")
