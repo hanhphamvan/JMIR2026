@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software or synthetic benchmark dataset, please cite it using the metadata below."
 type: software
-title: "Why Specimen Dispatch Optimization Alone Does Not Shorten Outpatient Laboratory Turnaround Time: A 10-Month Two-Wave Fork–Join Simulation Study"
+title: "Does Specimen Dispatch Optimization Shorten Outpatient Laboratory Turnaround Time? A 10-Month Two-Wave Fork–Join Simulation Study"
 authors:
   - family-names: Pham
     given-names: Van Hanh
@@ -14,7 +14,7 @@ authors:
     given-names: Hoang Son
 license: MIT
 repository-code: "https://github.com/hanhphamvan/JMIR2026"
-date-released: 2026-11-12
+date-released: 2026-11-17
 keywords:
   - digital twin
   - genetic algorithm

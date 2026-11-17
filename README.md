@@ -1,4 +1,4 @@
-# Why Specimen Dispatch Optimization Alone Does Not Shorten Outpatient Laboratory Turnaround Time: A 10-Month Two-Wave Fork–Join Simulation Study
+# Does Specimen Dispatch Optimization Shorten Outpatient Laboratory Turnaround Time? A 10-Month Two-Wave Fork–Join Simulation Study
 
 Public reproducibility repository accompanying the JMIR manuscript evaluating a **two-wave Fork–Join discrete-event simulation (DES) and Memetic Digital Twin–Genetic Algorithm (Memetic DT-GA)** dispatch framework for outpatient clinical laboratory turnaround time (TAT) and >120-minute service-level agreement (SLA) compliance.
 
@@ -22,6 +22,7 @@ This repository contains the complete simulation and optimization source code, s
 │   ├── 01_audit_start_time_invariance.py  # Start-time invariance (Eq. 13) & information checks
 │   ├── 02_audit_wilcoxon_permutation.py   # Sign-flip permutation Wilcoxon tests & 2-level bootstrap CIs
 │   ├── 03_audit_calibration_lag_sensitivity.py # Analytic T2–T4 vs T2–T5 replay vs calibration-period lag draws
+│   ├── 04_audit_received_scan_and_tight_capacity.py # Empirical T3–T4 onboard peaks, May 11 exclusion, tight capacity (c_m<=10,6) & re-optimization
 │   └── README.md
 ├── data/
 │   └── synthetic_demo_orders.csv.gz       # Synthetic 304-day benchmark dataset (15,349 rows; zero PHI)
